@@ -1,0 +1,102 @@
+# Space Invaders
+
+## Auteurs
+- PICARD Raphaël
+- ROSSIAUD Bastien
+
+## Règles du jeu
+- Tuer tous les aliens avec le vaisseau.
+- Des murs sont présents pour vous protéger.
+- Tuer des aliens normaux vous fait gagner 25 points.
+- Tuer des aliens non tireurs vous fait gagner 15 points.
+- Tirer sur les murs vous fait perdre 10 points.
+- Des aliens bonus se déplacent dans votre direction pour vous attaquer.
+- Tuer un alien bonus vous rapporte 200 points.
+- Se faire toucher par un alien bonus vous fait automatiquement perdre la partie.
+- Les aliens tirent aléatoirement sur vous.
+- Vous possédez trois vies avant de faire un game over.
+
+## Commandes du jeu
+- Utilisez les flèches gauche et droite pour déplacer le vaisseau.
+- Appuyez sur la barre d'espace pour tirer des projectiles.
+- Appuyez sur 'V' pour ajouter une vie.
+- Appuyez sur '+' pour augmenter la vitesse des aliens.
+- Appuyez sur '-' pour diminuer la vitesse des aliens.
+- Appuyez sur 'Échap' pour mettre le jeu en pause.
+
+## Adresse du répertoire GIT
+[cpe-lyon/tp-space-invaders-picard-rossiaud](https://github.com/cpe-lyon/tp-space-invaders-picard-rossiaud)
+
+## Présence de listes dans le code et explication
+- **Liste des aliens** : `self.aliens` dans `AlienManager.py` contient tous les aliens normaux et non tireurs.
+- **Liste des aliens bonus** : `self.aliens_bonus` dans `AlienManager.py` contient tous les aliens bonus.
+- **Liste des projectiles du joueur** : `self.projectiles_joueur` dans `jeu.py` contient tous les projectiles tirés par le joueur.
+- **Liste des projectiles des aliens** : `self.projectiles_aliens` dans `jeu.py` contient tous les projectiles tirés par les aliens.
+
+## Structure du projet
+- `main.py` : Point d'entrée du jeu. Initialise et lance le jeu.
+- `jeu.py` : Contient la classe `Jeu` qui gère la logique principale du jeu.
+- `graphics.py` : Contient la classe `Graphics` qui gère l'interface graphique du jeu.
+- `AlienManager.py` : Contient la classe `AlienManager` qui gère la création et le déplacement des aliens.
+- `aliens.py` : Contient la classe `Alien` qui représente un alien individuel.
+- `AlienBonus.py` : Contient la classe `AlienBonus` qui représente un alien bonus.
+- `tirs.py` : Contient la classe `Projectile` qui représente un projectile tiré par le vaisseau ou les aliens.
+- `vaisseau.py` : Contient la classe `vaisseau`  qui représente le vaisseau du joueur.
+- `murs.py` : représente la classe `Mur` qui représente un mur pour pouvoir se protéger.
+- `MurManager.py` : Contient la classe `MurManager` qui gère la création et la suppression des murs. 
+- `images/` : Contient les images utilisées dans le jeu (vaisseau, aliens, murs, etc.).
+-`AliensBonus.py` :   
+
+## Instructions d'installation
+1. Clonez le répertoire GIT :
+    ```bash
+    git clone https://github.com/cpe-lyon/tp-space-invaders-picard-rossiaud.git
+    ```
+2. Accédez au répertoire du projet :
+    ```bash
+    cd tp-space-invaders-picard-rossiaud
+    ```
+3. Installez les dépendances requises :
+    ```bash
+    pip install -r requirements.txt
+    ```
+4. Lancez le jeu :
+    ```bash
+    python main.py
+    ```
+
+## Fonctionnalités à venir
+- Ajout d'un leaderboard pour enregistrer les meilleurs scores.
+- Cacher les aliens derrière l'affichage de vie et de score.
+- Ajout de nouveaux types d'aliens et de power-ups pour le joueur.
+- Ajout de niveaux de difficulté pour augmenter la vitesse des aliens.
+- Ajout de la possibilité de sauvegarder et charger une partie.
+- Ajout de la possibilité de personnaliser les touches du clavier.
+- Ajout de la possibilité de personnaliser les couleurs du jeu...
+
+## Remerciements
+Merci à tous ceux qui ont contribué à ce projet et à nos professeurs pour leur soutien et leurs conseils.
+
+---
+
+Profitez du jeu et amusez-vous bien ! 🚀👾
+
+
+
+### TODO
+
+"""
+Space Invaders
+Par : Picard Raphaël et Rossiaud Bastien 3ETI
+Lieu : CPE LYON
+Date de rendu : 12/12/2024
+Codé en : Python sur VSCode
+
+Ce document contenant le code principal. A lancer pour lancer le jeu.
+L'objectif de ce programme est de recréer le jeu Space Invaders en utilisant le module Tkinter.
+Le jeu consiste à détruire les aliens qui descendent progressivement vers le vaisseau du joueur, tout en évitant les tirs ennemis et en récupérant des bonus avant que les aliens n'arrivent sur le vaisseau.
+Plusieures situations mènent soit à la victoire soit à la défaite du joueur.
+
+TODO : None
+"""
+source /Users/RaphaelPICARD/env_msi/bin/activate
